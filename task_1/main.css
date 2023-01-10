@@ -1,0 +1,31 @@
+h1 {
+  color: rgb(45, 156, 160);
+  font-family: sans-serif;
+}
+
+.second-list {
+  color: rgb(45, 156, 160);
+}
+
+code {
+  font-family: monospace;
+  color: red;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+li {
+  font-family: monospace;
+}
+
+li:first-child~li {
+  background-color: black;
+  color: white;
+}
+
+ol li {
+  background-color: black;
+  color: white;
+}
