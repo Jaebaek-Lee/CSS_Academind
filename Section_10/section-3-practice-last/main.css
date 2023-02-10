@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.box {
+  font-weight: bold;
+  font-size: 50px;
+  padding: 10px;
+  background-color: grey;
+  border: black solid 10px;
+  display: inline-block;
+}
+
+.box__first-box {
+  height: 100%;
+  width: 50%;
+}
+
+.box__second-box {
+  height: 300px;
+  width: calc(50% - 5px);
+}
+
+.box__second-box:hover {
+  color:white;
+  background-color: green;
+}
