@@ -1,0 +1,87 @@
+main {
+  padding-top: 2rem;
+}
+
+.signup-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ff5454;
+}
+
+.signup-form {
+  padding: 1rem;
+}
+
+.signup-form label {
+  font-weight: bold;
+}
+
+.signup-form label,
+.signup-form input,
+.signup-form select {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.signup-form input,
+.signup-form select {
+  border: 1px solid #ccc;
+  padding: 0.2rem 0.5rem;
+  font: inherit;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  outline: none;
+  /* 이렇게 하면 텍스트 input 말고 체크박스같은건 focus:visible(키보드로 focus)시 아웃라인이 사라짐.
+  그럼 focus위치를 모르게됨. 해결 위해서는 focus:visivle 재정의*/
+  background: #d8f3df;
+  border-color: #2ddf5c;
+}
+
+/* .signup-form input[type="checkbox"]:focus-visible {
+  outline: black 1px solid;
+} */
+
+.signup-form input[id*="term"],
+.signup-form input[id*="term"] + label {
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+  /* auto가 자식요소, 여기선 그냥 내부 텍스트나 체크박스 크기만큼 할당됨 */
+}
+
+.signup-form button[type="submit"] {
+  display: block;
+  margin-top: 1rem;
+}
+
+.signup-form input[type="checkbox"] {
+  border: 1px solid #ccc;
+  background: white;
+  width: 1rem;
+  height: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+}
+
+/* .signup-form input.invalid,
+.signup-form select.invalid, */
+.signup-form :invalid {
+  background: #ffe3e3;
+  border-color: #ff5454;
+}
+
+.signup-form input[type="checkbox"]:checked {
+  background: #2ddf5c;
+  border-color: #0e4f1f;
+}
+
+@media (min-width: 40rem) {
+  .signup-form {
+    width: 25rem;
+    margin: auto;
+  }
+}
